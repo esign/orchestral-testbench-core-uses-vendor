@@ -1,17 +1,17 @@
 {
-    "name": ":vendor/:package_slug",
-    "description": ":package_description",
+    "name": "esign/orchestral-testbench-core-uses-vendor",
+    "description": "Reproduction repository for https://github.com/orchestral/testbench-core/issues/372",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "esign",
+        "orchestral-testbench-core-uses-vendor"
     ],
-    "homepage": "https://github.com/:vendor/:package_slug",
+    "homepage": "https://github.com/esign/orchestral-testbench-core-uses-vendor",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Jordy Van der Haegen",
+            "email": "jordy.vanderhaegen@dynamate.be",
             "role": "Developer"
         }
     ],
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            ":vendor_namespace_escaped\\": "src"
+            "Esign\\OrchestralTestbenchCoreUsesVendor\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":vendor_namespace_escaped\\Tests\\": "tests"
+            "Esign\\OrchestralTestbenchCoreUsesVendor\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                ":vendor_namespace_escaped\\:studly_package_nameServiceProvider"
+                "Esign\\OrchestralTestbenchCoreUsesVendor\\OrchestralTestbenchCoreUsesVendorServiceProvider"
             ],
             "aliases": {
-                ":studly_package_name": ":vendor_namespace_escaped\\Facades\\:studly_package_nameFacade"
+                "OrchestralTestbenchCoreUsesVendor": "Esign\\OrchestralTestbenchCoreUsesVendor\\Facades\\OrchestralTestbenchCoreUsesVendorFacade"
             }
         }
     },
